@@ -55,7 +55,7 @@ Learn to implement recursion to a set of collected data organized using object-o
 
 # The goal
 
-You will be identifying the frequency of a trait within a sampleset and determine the probability of your findings given the frequency of this allele within the population. 
+You will be identifying the frequency of a trait within a sampleset and determining the probability of your findings given the frequency of this allele within the population. 
 
 # Background
 
