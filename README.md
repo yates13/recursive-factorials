@@ -97,7 +97,13 @@ def get_factorial_recur(n):
 A Bernoulli trial is a random experiment with two possible outcomes. Using a binomial distribution, the probability of an outcome can be calculated using the following formula:
 
 
-![abbrev-pipeline](./images/BinomialBernoulli.png)
+![binomial-bernoulli](./images/BinomialBernoulli.png)
+
+Where k = the number of occurences of a trait, n = the sample size, and p = the frequency of a trait in a population.
+
+For example, if the frequency of a trait in a population is 0.25 and you collect 50 individuals from the population, here is how you would calculate the probability that 3 of the 50 individuals have that trait:
+
+![example-equation](./images/ExampleEquation.png)
 
 # The project
 
