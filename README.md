@@ -61,9 +61,9 @@ Learn to implement recursion to a set of collected data organized using object-o
 
 # The goal
 
-You will be identifying the frequency of a disease allele within a sampleset and determine the probability of your findings given the frequency of this allele within the population. 
+You will be identifying the frequency of a trait within a sampleset and determine the probability of your findings given the frequency of this allele within the population. 
 
-# Overview
+# Background
 
 ## Recursion
 
@@ -84,6 +84,7 @@ def get_factorial_iter(n):
 
 However, you can also code this process recursively as follows:
 
+
 ```
 def get_factorial_recur(n):
     if n == 1:
@@ -99,18 +100,39 @@ A Bernoulli trial is a random experiment with two possible outcomes. Using a bin
 
 ![binomial-bernoulli](./images/BinomialBernoulli.png)
 
-Where k = the number of occurences of a trait, n = the sample size, and p = the frequency of a trait in a population.
+Where k = the number of occurences of a trait, n = the sample size, p = the frequency of a given trait in a population, and q = frequency of the other trait (assuming there are only two traits). Helpful hint: p + q = 1.
 
 For example, if the frequency of a trait in a population is 0.25 and you collect 50 individuals from the population, here is how you would calculate the probability that 3 of the 50 individuals have that trait:
 
+
 ![example-equation](./images/ExampleEquation.png)
+
+Which value is ```4.11 * 10^-4```.
 
 # The project
 
-The trait "blue" has a frequency of 0.3 within the population. This trait is encoded by the "Aubie" gene when the fourth amino acid is a Serine (Ser; S). The other trait, "orange", occurs when the fourth amino acid is an Argenine (Arg;R). Within this repository, there is a fasta file titled ```Aubie.fasta```. You are to do the following:
+Weagle feather color is encoded by the "Aubie" gene. The trait "blue" has a frequency of 0.3 within a population of weagles. This trait is encoded by the "Aubie" gene when the fourth amino acid is a Serine (Ser; S). The other trait, "orange", occurs when the fourth amino acid is an Argenine (Arg;R).
 
-1. Create a class with attributes for each individual's (A) sampleID, (B) date of sequencing, (C) locality where sample is from, (D) phenotype ("orange" or "blue"), and (E) nucleotide sequence.
-1. Calculate the total number of individuals in your sample set (your 
+Within this repository, there is a fasta file titled ```Aubie.fasta```. You are to do the following:
+
+1. Create a class with attributes for each individual's (A) sampleID, (B) date of sequencing, (C) phenotype ("orange" or "blue"), and (D) nucleotide sequence.
+1. Calculate the total number of individuals in your sample set (your "n")
+1. Provide a list of all individuals with the "orange" trait (your "k")
 1. Calculate the frequency of the "orange" trait within your sample set
-1. Provide a list of all individuals with the "orange" trait 
-1. Calculate the probability of finding 
+1. Calculate the probability of finding your number of observed orange traits given the sample size and the frequency of orange within the population [f(k;n,p)]
+
+Each of these should be reported in a file called ```results.txt```. An example is available in the file ```results-example.txt```, which is the output from examination of the ```Aubie.fasta``` file; your results file should be in this exact format.
+
+Your script should create this ```results.txt``` file from a user-provided (1) fasta file and (2) trait frequency value. For example, the script to generate the ```results-example.txt``` would be called by running:
+
+```
+python popgen_bernoulli.py Aubie.fasta 0.3 results.txt
+```
+
+The arguments ```Aubie.fasta```, ```0.3```, and ```results.txt``` are accessed by the ```popgen_bernoulli.py``` script using the sys python module.
+
+To compare your ```results.txt``` file from analyzing the ```Aubie.fasta``` with the ```results-example.txt``` output file, you can do the following while in a directory containing both of these files:
+
+```
+diff results.txt results-example.txt
+```
