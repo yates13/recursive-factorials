@@ -99,7 +99,7 @@ A Bernoulli trial is a random experiment with two possible outcomes. Using a bin
 
 https://latex.codecogs.com/svg.image?f\(k;n,p\)&space;=&space;\frac{n!}{\(n-k\)!k!}p^kq^{n-k}
 
-![\Large f\(k;n,p\) = \frac{n!}{\(n-k\)!k!}p^kq^{n-k}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
+![\Large f\(k;n,p\) = \frac{n!}{\(n-k\)!k!}p^kq^{n-k}](https://latex.codecogs.com/svg.latex?\Large&space;f\(k;n,p\) = \frac{n!}{\(n-k\)!k!}p^kq^{n-k}) 
 
 # The project
 
