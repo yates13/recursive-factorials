@@ -4,15 +4,9 @@ code.
 # Contents
 
 -   [Getting set up](#getting-set-up)
--   [Learning objective](#learning-objective)
 -   [The goal](#the-goal)
--   [The script](#the-script)
--   [Best practice 1: Put code into functions](#best-practice-1-put-code-into-functions)
--   [Best practice 2: Write modules not scripts](#best-practice-2-write-modules-not-scripts)
--   [Best practice 3: Use docstrings to document your code](#best-practice-3-use-docstrings-to-document-your-code)
--   [Best practice 4: Add tests to your docstrings](#best-practice-4-add-tests-to-your-docstrings)
--   [Acknowledgments](#acknowledgments)
--   [License](#license)
+-   [Background](#background)
+-   [Exercise](#exercise)
 
 
 # Getting set up
