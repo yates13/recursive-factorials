@@ -97,7 +97,7 @@ def get_factorial_recur(n):
 A Bernoulli trial is a random experiment with two possible outcomes. Using a binomial distribution, the probability of an outcome can be calculated using the following formula:
 
 
-![abbrev-pipeline](./images/BinomialBernoulli.svg)
+![abbrev-pipeline](./images/BinomialBernoulli.png)
 
 # The project
 
