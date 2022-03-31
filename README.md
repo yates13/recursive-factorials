@@ -140,3 +140,5 @@ To compare your ```results.txt``` file from analyzing the ```Aubie.fasta``` with
 ```
 diff results.txt results-example.txt
 ```
+
+If this command gives you no output, there are no differences between the two files. Good job!
