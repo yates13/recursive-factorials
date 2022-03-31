@@ -113,9 +113,11 @@ Which value is ```4.11 * 10^-4```.
 
 # Exercise
 
-Weagle feather color is encoded by the "Aubie" gene. The trait "blue" has a frequency of 0.3 within a population of weagles. This trait is encoded by the "Aubie" gene when the fourth amino acid is a Serine (Ser; S). The other trait, "orange", occurs when the fourth amino acid is an Argenine (Arg;R).
+Weagle feather color is encoded by the _Aubie_ gene. The trait "blue" has a frequency of 0.3 within a population of weagles. This trait is encoded by the _Aubie_ gene when the fourth amino acid is a Serine (Ser; S). The other trait, "orange", occurs when the fourth amino acid is an Argenine (Arg;R).
 
-Within this repository, there is a fasta file titled ```Aubie.fasta```. You are to do the following:
+>Note: The _Aubie_ gene is encoded with the vertebrate nuclear genetic code (the default genetic code for the Bio.Seq module)
+
+Within this repository, there is a fasta file titled ```Aubie.fasta```. This file contains a header with sample information and the coding sequence of the _Aubie_ gene. The header contains the sample ID and the date of the sequencing, which are separated by an underscore. You are to do the following:
 
 1. Create a class with attributes for each individual's (A) sampleID, (B) date of sequencing, (C) phenotype ("orange" or "blue"), and (D) nucleotide sequence.
 1. Calculate the total number of individuals in your sample set (your "n")
