@@ -99,6 +99,8 @@ A Bernoulli trial is a random experiment with two possible outcomes. Using a bin
 
 https://latex.codecogs.com/svg.image?f\(k;n,p\)&space;=&space;\frac{n!}{\(n-k\)!k!}p^kq^{n-k}
 
+![\Large f\(k;n,p\) = \frac{n!}{\(n-k\)!k!}p^kq^{n-k}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
+
 # The project
 
 The trait "blue" has a frequency of 0.3 within the population. This trait is encoded by the "Aubie" gene when the fourth amino acid is a Serine (Ser; S). The other trait, "orange", occurs when the fourth amino acid is an Argenine (Arg;R). Within this repository, there is a fasta file titled ```Aubie.fasta```. You are to do the following:
