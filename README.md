@@ -55,7 +55,7 @@ Learn to implement recursion to a set of collected data organized using object-o
 
 # The goal
 
-You will be identifying the frequency of a trait within a sampleset and determining the probability of your findings given the frequency of this allele within the population. 
+You will identify the frequency of a trait within a sampleset and determine the probability of your findings given the frequency of this allele within the population. 
 
 # Background
 
@@ -65,7 +65,7 @@ A recursive function calls itself one or more times until a specified condition 
 
 Recursive processes are useful when the space to be examined is complex (e.g. tree traversal). While we aren't going to address these scenarios in this class, we will introduce the process of recursion using a simple example: the factorial.
 
-In introductory math classes you learn that factorials are the product of all positive numbers from 1 to a given number n (represented as n!). This mathematical process can be coded iteravely as follows:
+In introductory math classes you learn that factorials are the product of all positive numbers from 1 to a given number n (represented as n!). For example, 5! can be written out as 5 * 4 * 3 * 2 * 1. This mathematical process can be coded iteravely as follows:
 
 ```
 def get_factorial_iter(n):
