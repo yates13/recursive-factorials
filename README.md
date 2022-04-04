@@ -115,16 +115,15 @@ Within this repository, there is a fasta file titled ```Aubie.fasta```. This fil
 
 1. Create a class with attributes for each individual's (A) sampleID, (B) date of sequencing, (C) phenotype ("orange" or "blue"), and (D) nucleotide sequence.
 1. Calculate the total number of individuals in your sample set (your "n")
-1. Provide a list of all individuals with the "orange" trait (your "k")
-1. Calculate the frequency of the "orange" trait within your sample set
+1. Provide a list of all individuals with the "blue" trait (your "k")
 1. Calculate the probability of finding your number of observed orange traits given the sample size and the frequency of orange within the population [f(k;n,p)]
 
 The results of your analysis will be reported in a file called ```results.txt```. An example is available in the file ```results-example.txt```, which is the output from examination of the ```Aubie.fasta``` file; your results file should be in this exact format. You can use the ```results-example.txt``` file as a key as you work with the ```Aubie.fasta``` file, but your script should be able to do these calculations for any file formated the same as ```Aubie.fasta```.
 
-Your script should create this ```results.txt``` file from a user-provided (1) fasta file, (2) trait frequency value, and (3) output file name (```results.txt```). These arguments should be provided in this order from the command line when the script is ran. For example, the script to generate the ```results-example.txt``` would be called by running:
+Your script should create this ```results.txt``` file from a user-provided (1) fasta file, (2) trait frequency value, and (3) output file name (```results.txt```). These arguments should be provided in this order from the command line when the script is ran. For example, the script to generate the ```results.txt``` would be called by running:
 
 ```
-python popgen_factorial.py Aubie.fasta 0.3 results.txt
+python popgen_bernoulli.py Aubie.fasta 0.3 results.txt
 ```
 
 The arguments ```Aubie.fasta```, ```0.3```, and ```results.txt``` are accessed by the ```popgen_bernoulli.py``` script using the sys python module.
