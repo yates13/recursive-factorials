@@ -107,7 +107,7 @@ Which value is ```4.11 * 10^-4```.
 
 # Exercise
 
-Weagle feather color is encoded by the _Aubie_ gene. The trait "blue" has a frequency of 0.3 within a population of weagles. This trait is encoded by the _Aubie_ gene when the fourth amino acid is a Serine (Ser; S). The only other trait, "orange", occurs when the fourth amino acid is an Argenine (Arg;R).
+Weagle feather color is encoded by the _Aubie_ gene. The trait "blue" has a frequency of 0.7 within a population of weagles. This trait is encoded by the _Aubie_ gene when the fourth amino acid is a Serine (Ser; S). The only other trait, "orange", occurs when the fourth amino acid is an Argenine (Arg;R).
 
 >Note: The _Aubie_ gene is encoded with the vertebrate nuclear genetic code (the default genetic code for the Bio.Seq module)
 
