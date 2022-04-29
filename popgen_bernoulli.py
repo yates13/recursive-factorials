@@ -32,7 +32,7 @@ def results(fasta_file, p, output, ln, n, blue, orange):
             p = the second user input 
             output = third user input 
             ln = starts at zero and is used as a line number counter
-            n = starts at zero and is used for factorials
+            n = starts at zero and is used to count number of samples
             blue = an empty list for the blue phenotype
             orange = an empty list for the orange phenotype
         Out:
